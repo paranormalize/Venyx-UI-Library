@@ -3,8 +3,8 @@ library.new(title)
 
     return -> library
 
-library:toggle(toggle)
-    toggle <boolean> -> toggles ui
+library:toggle()
+    toggle -> toggles ui
 
 library:setTheme(theme, color)
     theme <string> -> theme to change, choices are listed in source
