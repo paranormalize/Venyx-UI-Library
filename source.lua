@@ -214,7 +214,7 @@ do
 	function library.new(title)
 		local container = utility:Create("ScreenGui", {
 			Name = title,
-			Parent = game.CoreGui
+			Parent = (gethui and gethui()) or game:GetService("CoreGui")
 		}, {
 			utility:Create("ImageLabel", {
 				Name = "Main",
@@ -2168,5 +2168,4 @@ do
 	end
 end
 
-print("dino was here :\)")
 return library
